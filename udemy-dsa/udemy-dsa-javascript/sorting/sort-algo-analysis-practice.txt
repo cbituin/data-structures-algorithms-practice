@@ -1,0 +1,52 @@
+Solutions provided by Udemy Course:
+
+//#1 - Sort 10 schools around your house by distance:
+Initial response: Insertion Sort
+Response provided by lesson: Insertion Sort
+    - Quicker on small sorts
+    - Easy to solution
+    - Has space complexity: O(1)
+
+//#2 - eBay sorts listings by the current Bid amount:
+Initial response: Merge Sort
+Response provided by lesson: Radix or Counting Sort
+    - A bid is usually a number
+    - Fixed length of integers
+    - Attempting to beat O(n log n)
+
+//#3 - Sport scores on ESPN
+Initial response: Merge Sort
+Response provided by lesson: Quick Sort
+    - Most efficient
+    - Concerned about in memory sorting
+    - Merge sort might be too much (space complexity)
+
+//#4 - Massive database (can't fit all into memory) needs to sort through past year's user data
+Initial response: Merge Sort
+Response provided by lesson: Merge Sort
+    - Sorts externally
+    - Significant amounts of data
+    - Concerned about performance - want O(n log n)
+
+//#5 - Almost sorted Udemy review data needs to update and add 2 new reviews
+Initial response: Insertion Sort
+Response provided by lesson: Insertion Sort
+    - Assuming most previous data is sorted
+    - Only adding two new reviews
+
+//#6 - Temperature Records for the past 50 years in Canada
+Initial response: Merge Sort
+Response provided by lesson: Radix/Counting OR Quick sort
+    - Radix/counting => if temps have no decimal places
+    - Quick sort =>Save on space complexity by using in memory sorting
+
+//#7 - Large user name database needs to be sorted. Data is very random.
+Initial response: Merge Sort
+Response provided by lesson: Merge Sort OR Quick Sort
+    - Merge Sort => If there's enough memory, and memory isn't too expensive on the machine
+    - Quick Sort => Not worried about worst case, and DB isn't too large
+
+//#8 - You want to teach sorting for the first time
+Initial response: Bubble Sort or Selection Sort
+Response provided by lesson: Bubble Sort Or Selection
+    - Typical first lesson sorts
