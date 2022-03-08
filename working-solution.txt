@@ -4,3 +4,31 @@ This file is created to allow for "whiteboard" DS+A solutions - preventing VSC f
 This will be the ongoing workspace for iterating through solutions. Final solutions will be placed in their respective sections of the curriculum.
 */
 
+/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */
+/**
+ * @param {TreeNode} root
+ * @return {boolean}
+ */
+ const isValidBST = (root) => {
+    
+    if (!root) {
+        return false;
+    } else {
+        let currentNode = root;
+        while(currentNode) {
+            if (currentNode.value < currentNode.left.value){
+                return false;
+            } else if (currentNode.value > currentNode.right.value) {
+                return false;
+            } else if ()
+        }
+
+    }
+};
