@@ -1,0 +1,30 @@
+//If you know a solution is not far from the root of the tree:
+Initial response: BFS
+Response provided by lesson: BFS
+    - starts searching closest nodes first
+
+//If the tree is very deep and solutions are rare: 
+Initial response: BFS
+Response provided by lesson: BFS
+    - DFS will take a long time
+    - 
+
+//If the tree is very wide:
+Initial response: BFS
+Response provided by lesson: DFS
+    - BFS will need too much memory
+
+//If solutions are frequent but located deep in the tree:
+Initial response: DFS
+Response provided by lesson: DFS
+    - Quick solution than BFS
+
+//Determining whether a path exists between two nodes:
+Initial response: DFS
+Response provided by lesson: DFS
+    - 
+
+//Finding the shortest path:
+Initial response: BFS
+Response provided by lesson: BFS
+    - 
