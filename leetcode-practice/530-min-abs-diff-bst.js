@@ -10,6 +10,32 @@
  * @param {TreeNode} root
  * @return {number}
  */
- var getMinimumDifference = function(root) {
+
+
+const getMinimumDifference = root => {
+    if (!root) {
+        return 0;
+    };
+
+    let treeList = [];
+
+    const traverse = root => {
+        if (root) {
+            traverse(root.left);
+            treeList.push(root.val);
+            traverse(root.right);
+        } else {
+            return;
+        }
+    }
     
+    traverse(root);
+    let minDiff = Infinity;
+    for (let i = 1; i < treeList.length; i++) {
+        
+        let calcDiff = Math.abs(treeList[i] - treeList[i-1]);
+        minDiff = calcDiff < minDiff ? calcDiff : minDiff;
+    }
+    
+    return minDiff;
 };
